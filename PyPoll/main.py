@@ -1,4 +1,5 @@
-# PyPoll Homework Solution.
+# PyPoll Homework Solution
+
 # Dependencies
 import os
 import csv
