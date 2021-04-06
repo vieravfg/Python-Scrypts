@@ -15,7 +15,7 @@ profit_losses = []
 date = []
 changes = []
 
-#Open csv
+#Read the csv file 
 with open(csvpath, newline='') as budgetfile:
     csvreader = csv.reader(budgetfile, delimiter=',')
     csv_header = next(csvreader)
