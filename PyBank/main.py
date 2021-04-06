@@ -1,14 +1,18 @@
 # Dependencies
 import os
 import csv
+
 #File to read to:
 csvpath = os.path.join("Resources", "budget_data.csv")
+
 #File to output
 file_to_output = os.path.join("Analysis", "pybank_analysis.txt")
+
 # Lists to store data
 profit_losses = []
 date = []
 changes = []
+
 #Open csv
 with open(csvpath, newline='') as budgetfile:
     csvreader = csv.reader(budgetfile, delimiter=',')
