@@ -20,11 +20,12 @@ voter_id = []
 #Read the csv file
 with open(csvpath, newline='') as electfile:
     csvreader = csv.reader(electfile, delimiter=',')
+    #
     csv_header = next(csvreader)
     #Loop through the csv file
     for x in csvreader:
         voter_id.append(x[0])
-        #Calculate the % of votes of each candidate
+        # If the candidate's name is in the csvreader's third column, create a list 
         if "Khan" in x[2]:
             khan_list.append(x)
         if "Correy" in x[2]:
