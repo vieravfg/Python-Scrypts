@@ -10,13 +10,13 @@ khan_list = []
 o_list = []
 li_list = []
 correy_list = []
-
 voter_id = []
-#Open csv
+
+#Read the csv file
 with open(csvpath, newline='') as electfile:
     csvreader = csv.reader(electfile, delimiter=',')
     csv_header = next(csvreader)
-
+    #Loop through the csv file
     for x in csvreader:
         voter_id.append(x[0])
         #Calculate the % of votes of each candidate
@@ -28,7 +28,7 @@ with open(csvpath, newline='') as electfile:
             li_list.append(x)
         if "O'Tooley" in x[2]:
             o_list.append(x)
-          
+        
     #Calculate the number of votes of each candidate
     khan_votes = len(khan_list)
     correy_votes = len(correy_list)
@@ -44,6 +44,19 @@ with open(csvpath, newline='') as electfile:
     li_percent = (int(li_votes)/int(total_votes)) * 100
     o_percent = (int(o_votes)/int(total_votes)) * 100
     
+    #Calculate most popular
+    number_votes = [(khan_votes),(correy_votes),(li_votes),(o_votes)]
+    max_vote = max(number_votes)
+    #Conditionals
+    if int(max_vote) == int(khan_votes):
+        winner = "Khan"
+    if int(max_vote) == int(correy_votes):
+        winner = "Correy"
+    if int(max_vote) == int(li_votes):
+        winner == "Li"
+    if int(max_vote) == int(o_votes):
+        winner == "O'Tooley"
+#Generate the pypoll analysis output
 output = (
     "Election Results\n"
     "-------------------------\n"
@@ -54,6 +67,7 @@ output = (
     "Li: " + '{:,.3f}%'.format(li_percent) + f" ({li_votes})\n"
     "O'Tooley: " + '{:,.3f}%'.format(o_percent) + f" ({o_votes})\n"
     "-------------------------\n"
+    f"Winner: {winner}\n" 
     "-------------------------\n")
 
 #Print the analysis to the terminal
@@ -61,3 +75,4 @@ print(output)
 #Export a text file with the results
 with open(file_to_output, "w") as txt_file:
     txt_file.write(output)
+   
