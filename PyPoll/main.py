@@ -1,10 +1,13 @@
 # Dependencies
 import os
 import csv
+
 #File to read to:
 csvpath = os.path.join("Resources", "election_data.csv")
+
 #File to output
 file_to_output = os.path.join("Analysis", "pypoll_analysis.txt")
+
 #Lists to store data
 khan_list = []
 o_list = []
