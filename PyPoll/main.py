@@ -37,15 +37,22 @@ with open(csvpath, newline='') as electfile:
 
     #Calculate the total number of votes
     total_votes = len(voter_id)
+
+    #Calculate the percentages of each candidate
+    khan_percent = (int(khan_votes)/int(total_votes)) * 100
+    correy_percent = (int(correy_votes)/int(total_votes)) * 100
+    li_percent = (int(li_votes)/int(total_votes)) * 100
+    o_percent = (int(o_votes)/int(total_votes)) * 100
+    
 output = (
     "Election Results\n"
     "-------------------------\n"
     f"Total Votes: {total_votes}\n"
     "-------------------------\n"
-    f"Khan: ({khan_votes})\n"
-    f"Correy: ({correy_votes})\n"
-    f"Li: ({li_votes})\n"
-    f"O'Tooley: ({o_votes})\n"
+    "Khan: " + '{:,.3f}%'.format(khan_percent) + f" ({khan_votes})\n"
+    "Correy: " + '{:,.3f}%'.format(correy_percent) + f" ({correy_votes})\n"
+    "Li: " + '{:,.3f}%'.format(li_percent) + f" ({li_votes})\n"
+    "O'Tooley: " + '{:,.3f}%'.format(o_percent) + f" ({o_votes})\n"
     "-------------------------\n"
     "-------------------------\n")
 
