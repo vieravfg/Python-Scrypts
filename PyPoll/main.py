@@ -25,7 +25,7 @@ with open(csvpath, newline='') as electfile:
     #Loop through the csv file
     for x in csvreader:
         voter_id.append(x[0])
-        # If the candidate's name is in the csvreader's third column, create a list 
+        # If the candidate's "name" is in the csvreader's row, create a new list with this rows
         if "Khan" in x[2]:
             khan_list.append(x)
         if "Correy" in x[2]:
@@ -53,7 +53,7 @@ with open(csvpath, newline='') as electfile:
     #Calculate most popular
     number_votes = [(khan_votes),(correy_votes),(li_votes),(o_votes)]
     max_vote = max(number_votes)
-    #Conditionals
+    #Conditionals: Defines who is the winner with the most votes
     if int(max_vote) == int(khan_votes):
         winner = "Khan"
     if int(max_vote) == int(correy_votes):
