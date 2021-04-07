@@ -1,7 +1,7 @@
 # Python-challenge
 
 ## Homework completed
-I have submitted two folders for the python-challenge homework, one for the PyBank challenge and one for the PyPoll challenge.
+I have submitted the **two** folders required for the python-challenge homework. One for the PyBank challenge and one for the PyPoll challenge.
 
 ## PyBank file shortcuts
 * [Main Script](PyBank/main.py) - The code for solving the PyBank challenge.
