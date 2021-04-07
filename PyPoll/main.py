@@ -25,7 +25,8 @@ with open(csvpath, newline='') as electfile:
     #Loop through the csv file
     for x in csvreader:
         voter_id.append(x[0])
-        # If the candidate's "name" is in the csvreader's row, create a new list with this rows
+        #Conditionals: Creates a list for each candidate
+        #If the candidate's "name" is in the csvreader's row[2], create a "new list" with the rows.
         if "Khan" in x[2]:
             khan_list.append(x)
         if "Correy" in x[2]:
