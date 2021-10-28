@@ -26,9 +26,7 @@ In this homework assignment, I'll be completing **two** Python Challenges, PyBan
 
 Both of these challenges encompass a real-world situations. 
 
-### Instructions
-
-#### PyBank
+## PyBank Instructions
 
 * Create a Python script for analyzing the financial records of the company. The financial dataset is called [budget_data.csv](PyPoll/Analysis/pypoll_analysis.txt). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
@@ -46,7 +44,7 @@ Both of these challenges encompass a real-world situations.
 
 * In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
-### PyPoll
+## PyPoll Instructions
 
 * Help a small, rural town modernize its vote counting process.
 
