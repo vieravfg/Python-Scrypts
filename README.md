@@ -23,7 +23,7 @@ Both of these challenges encompass a real-world situations.
 
 #### PyBank
 
-* Create a Python script for analyzing the financial records of the company. The financial dataset is called [budget_data.csv]. The dataset is composed of two columns: `Date` and `Profit/Losses`. 
+* Create a Python script for analyzing the financial records of the company. The financial dataset is called [budget_data.csv](PyPoll/Analysis/pypoll_analysis.txt). The dataset is composed of two columns: `Date` and `Profit/Losses`. 
 
 * The task is to create a Python script that analyzes the records to calculate each of the following:
 
@@ -39,11 +39,11 @@ Both of these challenges encompass a real-world situations.
 
 * In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
-## PyPoll
+### PyPoll
 
 * Help a small, rural town modernize its vote counting process.
 
-* The poll dataset is called [election_data.csv]. The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. The task is to create a Python script that analyzes the votes and calculates each of the following:
+* The poll dataset is called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. The task is to create a Python script that analyzes the votes and calculates each of the following:
 
   * The total number of votes cast
 
