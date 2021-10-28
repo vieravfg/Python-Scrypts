@@ -1,6 +1,5 @@
-# Python-challenge
+# Python Scrypts
 
-## Homework completed
 I have submitted the **two** folders required for the python-challenge homework. One for the PyBank challenge and one for the PyPoll challenge.
 
 ## PyBank file shortcuts
