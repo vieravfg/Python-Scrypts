@@ -7,10 +7,18 @@ I have submitted the **two** folders required for the python-challenge homework.
 * [Resources csv file](PyBank/Resources/budget_data.csv) - CSV file used for PyBank.
 * [Analysis text file](PyBank/Analysis/pybank_analysis.txt) - Text file with the results.
 
+## Results:
+
+![solution1](PyBank/Pictures/PyBank_pic.png)
+
 ## PyPoll file shorcuts
 * [Main Script](PyPoll/main.py) - The code for solving the PyPoll challenge.
 * [Resources csv file](PyPoll/Resources/election_data.csv) - CSV file used for PyPoll.
 * [Analysis text file](PyPoll/Analysis/pypoll_analysis.txt) - Text file with the results.
+
+## Results:
+
+![solution1](PyPoll/Pictures/PyPoll_pic.png)
 
 - - -
 ## Background
